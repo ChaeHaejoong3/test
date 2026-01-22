@@ -1,11 +1,20 @@
 @import "tailwindcss";
+@import "highlight.js/styles/github-dark.css";
 
-@font-face {
-  font-family: "line";
-  src: url("/fonts/Line.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+:root {
+  --duck-orange: 32 100% 51%;
+  --side-padding: 20%;
+  --color-title: 222 47% 11%;
+  --color-body: 215 16% 47%;
+  --text-muted: 215 16% 65%;
+}
+
+@theme {
+  --color-duck: hsl(var(--duck-orange));
+  --spacing-layout: var(--side-padding);
+  --color-title: hsl(var(--text-title));
+  --color-body: hsl(var(--text-body));
+  --color-muted: hsl(var(--text-muted));
 }
 
 @layer base {
@@ -14,7 +23,15 @@
   }
 
   .px-layout {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: side-padding;
+    padding-right: side-padding;
   }
+}
+
+@font-face {
+  font-family: "line";
+  src: url("/fonts/Line.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
