@@ -1,4 +1,4 @@
-import ModalOverlay from "@/shared/ui/ModalOverlay";
+import ModalOverlay from "@/shared/ui/overlay/ModalOverlay";
 import { useLoginModalStore } from "../store/useLoginModalStore";
 import useLogin from "../hooks/useLogin";
 

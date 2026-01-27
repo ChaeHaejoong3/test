@@ -1,5 +1,5 @@
 import MarkdownRenderer from "@/shared/ui/MarkdownRenderer";
-import ModalOverlay from "@/shared/ui/ModalOverlay";
+import ModalOverlay from "@/shared/ui/overlay/ModalOverlay";
 
 type PreviewModal = {
   content: string;
