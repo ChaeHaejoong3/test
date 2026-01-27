@@ -8,7 +8,7 @@ type PreviewModal = {
 
 export default function PreviewModal({ content, onClose }: PreviewModal) {
   return (
-    <ModalOverlay onClose={onClose}>
+    <ModalOverlay modalClose={onClose}>
       <div className="w-10/12 h-10/12 rounded-2xl p-4 bg-white">
         <MarkdownRenderer content={content} />
       </div>
